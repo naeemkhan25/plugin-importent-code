@@ -1,0 +1,27 @@
+https://jqueryui.com/datepicker/
+//aigulo wrodpress nije ar modde bandel akare ache.
+https://developer.wordpress.org/reference/functions/wp_register_script/
+//cdnjs.com
+
+//new input er somay arry judi te data na thake taile strig hisabe pass hoy.
+Warning: in_array() expects parameter 2 to be array, string given in C:\xampp\htdocs\khan\wp-content\plugins\OurMetabox\our-metabox.php on line 140
+
+//wordpress taxonomy er add ba edit er sathe kono kisu add korthe chaile ,ai link ajabo.
+https://developer.wordpress.org/reference/functions/register_meta/
+add_Action(init,er modde oi field gulo dib,)
+category Out put er jonno 
+add_action("category_add_form_field")
+tag er jonno
+add_action("post_tag_add_form_field);
+
+
+jodi user From er sathe kono field add_korthe chai.
+ add_filter("user_contactmethods",array($this,"add_metabox_in_user_extra_info"));
+
+
+//setting option e kono kisu add korthe chaile 
+
+add_action("admin_init);
+
+//plugin initial hober sathe sathe kono function k run korathe chaile 
+add_action("init",function ti kaj korbe)

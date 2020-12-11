@@ -1,0 +1,23 @@
+//https://developer.wordpress.org/reference/functions/register_meta/
+add_Action(init,er modde oi field gulo dib,)
+category Out put er jonno 
+add_action("category_add_form_field")
+add_action("category_edit_form_field")
+tag er jonno
+add_action("post_tag_add_form_field);
+add_action("create_category","save er jonno data);
+//data database save er jonno update_term_meta() use korbo.
+//data gulo abar tule anar jonno ba edit option e dekhar jonno.
+ $extra_inf=get_term_meta($term->term_id,"taxonomy_extra_info",true);
+//aibar amra eidt data k updata korbo.er jonno nonce k validation korthe hoibe.inspect element kore.
+//ekhon amra edit option er value ka change korbo tar jonno amra abar noce field cheack korbo.
+    //but ekhane jamela ache.inspectelement korle dekha editTag but kaj kore na .nonec.show inspectelement kora
+//action er name dhore search dibo wordpress e . then instraction pobo.
+add_action("edit_category",);
+//seache dibo wordpress e  ::editedtag::.,
+ //nonce for eidt:if(wp_verify_nonce($_POST['_wpnonce'],"update-tag_{$term_id}"));
+
+//ekon amra same field tag e add korbo er jon category er bodole post_tag use korbo.
+
+//same proseses cptui er taxonomy er khetre o.
+//sudho category/ba post_tag er proriborte slug/

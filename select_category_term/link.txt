@@ -1,0 +1,4 @@
+//get_terms search dibo;
+jai gulo category ba tag er term gulo ,niye ase
+https://developer.wordpress.org/reference/functions/get_terms/
+get_terms( array|string $args = array(), array|string $deprecated = '' )

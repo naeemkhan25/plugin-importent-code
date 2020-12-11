@@ -1,0 +1,4 @@
+add_image_size kaj korbe na karon wordpress nije src_set kore aita change 
+er jonno ekta fielter lekthe hoibe.
+add_fielter("wp_calculate_image_srcset");
+function return null,

@@ -1,0 +1,15 @@
+jaita $wp_query return kore
+example:
+function manage_post_sorted($wpquery){
+    if(!is_admin()){
+        return;
+    }
+    $orderby=$wpquery->get('orderby');
+    if('wordn'==$orderby){
+        $wpquery->set('meta_key',"wordDataCount");
+        $wpquery->set("orderby",'meta_value_num');
+    }
+
+
+}
+add_action("pre_get_posts","manage_post_sorted");

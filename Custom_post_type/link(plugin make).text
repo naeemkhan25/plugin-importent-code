@@ -1,0 +1,3 @@
+register_post_type( string $post_type, array|string $args = array() )
+//link
+//https://developer.wordpress.org/reference/functions/register_post_type/

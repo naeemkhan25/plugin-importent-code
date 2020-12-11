@@ -1,0 +1,47 @@
+{
+    "packages": [
+        {
+            "name": "hasinhayder/d",
+            "version": "1.2.2",
+            "version_normalized": "1.2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hasinhayder/D.git",
+                "reference": "6c27cf1cbc7b08b9d6a8729e3ba4c700c966ab82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hasinhayder/D/zipball/6c27cf1cbc7b08b9d6a8729e3ba4c700c966ab82",
+                "reference": "6c27cf1cbc7b08b9d6a8729e3ba4c700c966ab82",
+                "shasum": ""
+            },
+            "time": "2020-04-15T12:13:26+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "HasinHayder\\D\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hasin Hayder",
+                    "email": "countdraculla@gmail.com",
+                    "homepage": "https://hasin.me"
+                }
+            ],
+            "description": "A utility package to help PHP developers debug their script by providing utility methods to collect data and display them all at once",
+            "support": {
+                "issues": "https://github.com/hasinhayder/D/issues",
+                "source": "https://github.com/hasinhayder/D/tree/master"
+            },
+            "install-path": "../hasinhayder/d"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

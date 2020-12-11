@@ -1,0 +1,41 @@
+//admin panel er post er sathe ba page er sathe meta add er jonn/
+example:
+oop style_construct:
+ add_action("admin_menu",array($this,"add_metabox_in_post"));
+//metabox
+function add_metabox_in_post(){
+     add_meta_box("_metabox_post_location",
+         __("location Info","OurMetabox"),
+     array($this,"ourMetaBOx_add_metabox"),//ai function dhore meta gullo add korbe
+     array("post",'page'),
+     "normal",
+     'default'
+
+     );
+
+
+
+///metabox add
+function ourMetaBOx_add_Gallery($post){
+        wp_nonce_field("gallery_nonce_field","gallery_nonce_name");
+        $image_ids=get_post_meta($post->ID,'omb_image_ids',true);
+        $image_urls=get_post_meta($post->ID,"omb_image_urls",true);
+        $metabox=<<<EOD
+<div class="row">
+<div class="col-1-3" style="text-align: left;">
+<lable for="image_button">Upload image: </lable>
+</div>
+<div style="text-align: center">
+<button class="button" id="ImageButtons">Upload Image</button>
+<input type="hidden" name="omb_image_ids" id="omb_image_ids" value="{$image_ids}"/>
+<input type="hidden" value="{$image_urls}" name="omb_image_urls" id="omb_image_urls"/>
+<div id="image_containers">
+</div>
+</div>
+</div>
+EOD;
+        echo $metabox;
+
+    }
+    
+}

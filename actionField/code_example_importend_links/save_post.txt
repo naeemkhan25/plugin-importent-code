@@ -1,0 +1,20 @@
+//database form er data gulo save er jonno ai action ti use hoy
+oop style:
+ add_action("save_post",array($this,"save_meta_post"));
+example:
+function save_meta_image($postId){
+//aita scurity check er jonno
+//obosoi setaize kore nibo
+    if(!$this->is_security('upload_image_nonce','wp_noonce_action_image',$postId)){
+        return $postId;
+    }
+    $image_id=isset($_POST['omb_image_id'])?$_POST['omb_image_id']:'';
+    $image_url=isset($_POST['omb_image_url'])?$_POST['omb_image_url']:'';
+    $image_ids=isset($_POST['omb_image_ids'])?$_POST['omb_image_ids']:'';
+    $image_urls=isset($_POST['omb_image_urls'])?$_POST['omb_image_urls']:'';
+    update_post_meta($postId,'omb_image_id',$image_id);
+    update_post_meta($postId,'omb_image_ids',$image_ids);
+    update_post_meta($postId,'omb_image_urls',$image_urls);
+    update_post_meta($postId,'omb_image_url',$image_url);
+
+}

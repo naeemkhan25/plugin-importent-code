@@ -1,0 +1,8 @@
+composer require hasinhayder/d
+use HasinHayder\D\D;
+
+
+code e use korbo.
+D::print_r($_products);
+D::dumpInConsole();
+//array ta console dekha jabe

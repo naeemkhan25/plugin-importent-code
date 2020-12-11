@@ -1,0 +1,12 @@
+.modal {
+    margin-top: -600px; /* Default position: out of view */
+    transition: margin-top 1s;
+}
+
+.opened {
+    margin-top: 0; /* Move to the center position */
+}
+
+.force {
+    transition-property: none; /* Disable the animation */
+}

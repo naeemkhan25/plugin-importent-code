@@ -1,0 +1,11 @@
+ 
+
+oop Style
+ add_action("plugin_loaded",array($this,"plugin_load_textdomain"));
+wordpress Style:
+ add_action("plugin_loaded","plugin_load_textdomain"));
+callback function:
+ function  plugin_load_textdomain(){
+        load_plugin_textdomain("oopNinja",false,dirname(__FILE__)."/languages");
+
+    }

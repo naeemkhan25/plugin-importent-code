@@ -1,0 +1,11 @@
+//plugin load hobar sathe sathe kono function k load korar kaj kore/
+//inisaly/
+//wordpress style
+
+
+
+function tynislider_image_size(){
+    add_image_size("tyniimage",400,400,true);
+}
+
+add_action("init","tynislider_image_size");

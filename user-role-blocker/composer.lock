@@ -1,0 +1,57 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b448ee9588876864017be975849c1893",
+    "packages": [
+        {
+            "name": "hasinhayder/d",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hasinhayder/D.git",
+                "reference": "6c27cf1cbc7b08b9d6a8729e3ba4c700c966ab82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hasinhayder/D/zipball/6c27cf1cbc7b08b9d6a8729e3ba4c700c966ab82",
+                "reference": "6c27cf1cbc7b08b9d6a8729e3ba4c700c966ab82",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HasinHayder\\D\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hasin Hayder",
+                    "email": "countdraculla@gmail.com",
+                    "homepage": "https://hasin.me"
+                }
+            ],
+            "description": "A utility package to help PHP developers debug their script by providing utility methods to collect data and display them all at once",
+            "support": {
+                "issues": "https://github.com/hasinhayder/D/issues",
+                "source": "https://github.com/hasinhayder/D/tree/master"
+            },
+            "time": "2020-04-15T12:13:26+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

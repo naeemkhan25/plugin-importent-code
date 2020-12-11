@@ -1,0 +1,9 @@
+
+    Container::make( 'post_meta', __( 'carbon Metabox',"carbon-test" ) )
+        ->where( 'post_type', '=', 'post' )
+        ->where('post_id',"CUSTOM",function ($id){
+            if(carbon_get_post_meta($id,'crb_text_data')=='naeem'){
+                return true;
+            }
+            return  false;
+        })
